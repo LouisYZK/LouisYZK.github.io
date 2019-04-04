@@ -11,5 +11,5 @@ This page contains some notes during the studying. I try to combine the experien
 
 **Notes list**
 
-- 01 [Markov Decision Process and Dynamic Programming]('/files/MDP_and_DP.pdf')
-- 02 [Monte Carlo Method and Temporial Difference]('/files/MC_and_TD.pdf')
+- 01 [Markov Decision Process and Dynamic Programming]('../files/MDP_and_DP.pdf')
+- 02 [Monte Carlo Method and Temporial Difference]('../files/MC_and_TD.pdf')
