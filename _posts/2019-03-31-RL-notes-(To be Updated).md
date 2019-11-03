@@ -15,3 +15,7 @@ $$V(s_t) = \sum_a{Q(s,a)}$$
 
 - 01 [Markov Decision Process and Dynamic Programming]('https://louisyzk.github.io/files/MDP_and_DP.pdf')
 - 02 [Monte Carlo Method and Temporial Difference]('https://louisyzk.github.io/files/MC_and_TD.pdf')
+
+- 01 <a href="https://louisyzk.github.io/files/MDP_and_DP.pdf">Markov Decision Process and Dynamic Programming</a> 
+
+- 02 <a href="https://louisyzk.github.io/files/MC_and_TD.pdf">Monte Carlo Method and Temporial Difference</a> 
