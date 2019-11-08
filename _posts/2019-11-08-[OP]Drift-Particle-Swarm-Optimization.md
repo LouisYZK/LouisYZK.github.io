@@ -200,6 +200,6 @@ It can be seen that the particle motion of the DPSO is more random, which enhanc
 
 ## Appendix
 
-- [Chinese version](https://zhuanlan.zhihu.com/p/90808688)
+- [Chinese version]()
 
 - [Origin jupyter notebook]()
