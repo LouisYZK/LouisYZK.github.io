@@ -21,6 +21,10 @@ $$X_{i j}^{k+1}=X_{i j}^{k}+V_{i j}^{k+1}$$
 
 where $c_1$ and $c_2$ are called acceleration coefficients, $w$ is the parameter which can be adjusted to the balance of **exploration and exploitation**, $r_{i j}^{k}, R_{i j}^{k} \sim U(0,1)$ are uniform random variables.
 
+$$P_{i}^{k}=\left\{\begin{array}{ll}{X_{i}^{k}} & {\text { if } f\left(X_{i}^{k}\right)>f\left(P_{i}^{k-1}\right)} \\ {P_{i}^{k-1}} & {\text { if } f\left(X_{i}^{k}\right) \leqslant f\left(P_{i}^{k-1}\right)}\end{array}\right.$$
+
+$$G^{k}=P_{g}^{k}, \text { where } g=\arg \max _{1 \leqslant i \leqslant m}\left[f\left(P_{i}^{k}\right)\right]$$
+
 ## DPSO
 
 In fact, as the particles are coverging to their own local attractors, their current position, personal best positions are all converging to one point, leading the PSO algorithm to converge. The particle’s directional movement toward $p_i^k$ is somewhat like the drift motion of an election in a con- ductor under electric field. However, besides the drift motion caused by electric field, the electron is also in thermo motion which appears to be random movement.
@@ -32,7 +36,8 @@ where:
 
 - $\phi_{i,j}^k$ is a random standard normal distribution
 
-- $\sigma_{i j}^{k}=\alpha \cdot\left|C_{j}^{k}-X_{i j}^{k}\right|$ and $C_{j}^{k}=(1 / m) \sum_{i=1}^{m} P_{i j}^{k}(1 \leqslant j \leqslant D)$
+- 
+$$\sigma_{i j}^{k}=\alpha \cdot\left|C_{j}^{k}-X_{i j}^{k}\right|$$ and $$C_{j}^{k}=(1 / m) \sum_{i=1}^{m} P_{i j}^{k}(1 \leqslant j \leqslant D)$$
 
 - $\alpha$ is called compression-expansion coeffient.
 
@@ -66,14 +71,14 @@ ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='hot')
 ```
 
 
-![png](output_3_1.png)
+<img src="https://pic.superbed.cn/item/5dc4ca4d8e0e2e3ee97bfc60.png" style="zoom:67%;" />
 
 ```python
 plt.contour(X, Y, Z)
 ```
 
 
-![png](output_4_1.png)
+<img src="https://pic.superbed.cn/item/5dc4ca4d8e0e2e3ee97bfc69.png" style="zoom:67%;" />
 
 
 ### PSO (Python simple version)
@@ -195,4 +200,4 @@ It can be seen that the particle motion of the DPSO is more random, which enhanc
 
 - [Chinese version]()
 
-- [Origin jupyter notebook](
+- [Origin jupyter notebook]()
