@@ -36,8 +36,10 @@ where:
 
 - $\phi_{i,j}^k$ is a random standard normal distribution
 
-- 
-$$\sigma_{i j}^{k}=\alpha \cdot\left|C_{j}^{k}-X_{i j}^{k}\right|$$ and $$C_{j}^{k}=(1 / m) \sum_{i=1}^{m} P_{i j}^{k}(1 \leqslant j \leqslant D)$$
+
+$$\sigma_{i j}^{k}=\alpha \cdot\left|C_{j}^{k}-X_{i j}^{k}\right|$$ 
+
+$$C_{j}^{k}=(1 / m) \sum_{i=1}^{m} P_{i j}^{k}(1 \leqslant j \leqslant D)$$
 
 - $\alpha$ is called compression-expansion coeffient.
 
@@ -198,6 +200,6 @@ It can be seen that the particle motion of the DPSO is more random, which enhanc
 
 ## Appendix
 
-- [Chinese version]()
+- [Chinese version](https://zhuanlan.zhihu.com/p/90808688)
 
 - [Origin jupyter notebook]()
