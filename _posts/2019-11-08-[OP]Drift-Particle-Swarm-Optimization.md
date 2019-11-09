@@ -56,7 +56,7 @@ Now we use a test function as follows to exam the performance of two type PSO al
 It is a two dimention optimization problem and this test funtion features a lot of local optimizations.
 
 
-```python
+{% highlight python %}
 # plot the test funtion
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -70,7 +70,7 @@ X, Y = np.meshgrid(X, Y)
 test_func = lambda X,Y: np.sin(np.sqrt(X**2+Y**2))/np.sqrt(X**2+Y**2)+np.exp((np.cos(2*np.pi*X)+np.cos(2*np.pi*Y))/2)-2.71289
 Z = test_func(X, Y)
 ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='hot')
-```
+{% endhighlight %}
 
 
 <img src="https://pic.superbed.cn/item/5dc4ca4d8e0e2e3ee97bfc60.png" style="zoom:67%;" />
