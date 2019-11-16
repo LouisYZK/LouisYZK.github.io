@@ -1,22 +1,2 @@
-title: Lil'Log
-name: "Lilian's Tech Blog"
-author: Lilian Weng
-twitter_username: lilianweng
-baseurl: "/lil-log"
-description: Document my learning notes.
-profile_url: "http://lilianweng.github.io"
-
-# Build settings
+permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
-highlighter: rouge
-excerpt_separator: <!--more-->
-plugins:
-  - jekyll-feed
-  - jekyll-archives
-exclude:
-  - Gemfile
-  - Gemfile.lock
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge

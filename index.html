@@ -1,29 +1,44 @@
 ---
 layout: default
+title: LouisYZK
+cv: passive
+<!-- notes: passive -->
+contact: passive
+article: passive
+<!-- research: passive -->
+description: Louis Young
 ---
-<div class="home other-pages">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">
-          {{ post.date | date: date_format }}
-          <span>
-            {% for tag in post.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a class="post-tag" href="/lil-log/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
-            {% endfor %}
-          </span>
-        </span>
+<!-- <div class="jumbotron"> -->
+<div class="row marketing">
+	<div class="col-sm-4">
+	<img  class="img-circle avatar" alt="Louis Young" src="https://pic.superbed.cn/item/5dbe3a778e0e2e3ee9d3c8ba.jpg" style="width: 200px;height: 200px;">
+	</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          {% if post.excerpt %}
-            {{ post.excerpt }}
-          {% endif %}
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
- </div>
+	<div itemscope itemtype="http://data-vocabulary.org/Person" class="col-sm-8">
+	<p class="lead">Hi, I'm <span itemprop="name">Zhi-Kai Yang (杨智凯CN)</span> 
+		<a href="" class="btn btn-default pull-right" title="Download CV as PDF">Download CV</a></p>
+	<!-- <p>I get by as a <span itemprop="title">librarian</span>, <span itemprop="title">front end developer</span>, <span itemprop="title">UI designer</span>, <span itemprop="title">digital publisher</span>, and music enthusiast living in <span itemprop="address" itemscope
+	itemtype="http://data-vocabulary.org/Address"> <span itemprop="locality">Plymouth</span>, <span itemprop="region">Michigan</span></span> and working for <a href="http://www.publishing.umich.edu">Michigan Publishing</a> at <span itemprop="affiliation">the <a href="http://www.lib.umich.edu">University of Michigan Library</a></span>.</p> -->
+	<p>
+		I am currently a Master Candidated student in 
+		<a href="http://www.xjtu.edu.cn/"><b>Xi'an Jiao Tong University(XJTU)</b> </a>
+		 in Shaan Xi, China. And I finished my Bachelor at China University of Geosciences.
+	</p>
+		<strong>
+			Research Interests:
+		</strong>
+		<ul>
+			<li>Methodologies: Machine Learning (Deep Learning, Reinforcement Learning, Probabilistic Programming)</li>
+			<li>Topics: Business Anlaytics etc</li>
+		</ul>
+	<p>
+	<p>
+		
+		I'm a <b>Pythonista</b>, using Python in Modeling,Web developing,Data Science and something interesting. 
+	</p>
+	</p>
+	<p>I'm also available for hire as a <span itemprop="title">freelance web developer, designer, or consultant</span>.
+		 <a href="contact">Drop me a line</a> about your project if you're interested in working with me.</p>
+	</div>
+</div>
+<!-- </div> -->
