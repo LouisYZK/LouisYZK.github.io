@@ -17,6 +17,7 @@ author:     BY Zhi-kai Yang
 
 - 超平面 
 - 球 $B(\boldsymbol{z}, \delta)=\left\{x \in \mathbb{R}^{n} |\|\boldsymbol{x}-\boldsymbol{z}\|<\delta\right\}$
+
 - 正定矩阵、半正定矩阵、对称矩阵
 
 **保持凸性的运算：**($C1$和$C2$均为凸集)
@@ -26,12 +27,18 @@ author:     BY Zhi-kai Yang
 - 闭包$cl(C)$ 和内部$int(C)$ 都是凸集
 - 放射变换下的像和原像
   - $\text { suppose } f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} \text { is affine }\left(f(x)=A x+b \text { with } A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m}\right)$
+  
+  
+  
   - $S \subseteq \mathbf{R}^{n} \text { convex } \Longrightarrow f(S)=\{f(x) | x \in S\} \text { convex }$
+  
+  
+  
   - $C \subseteq \mathbf{R}^{m} \text { convex } \quad \Longrightarrow \quad f^{-1}(C)=\left\{x \in \mathbf{R}^{n} | f(x) \in C\right\} \text { convex }$
 
 **泛函概念补充(此课程默认prerequisite是泛函分析？)**
 
-> - 内点： 对于度量空间$(X, d)$ , $M \subset X$ , 如果$x \in M$, $\exist r > 0$, 若$B(x, r) \subset M$, 则$x$为$M$的内点；（一般的度量空间需要满足一些性质，比一般的向量空间更加宽泛，严格定义参看泛函中的定义）
+> - 内点： 对于度量空间$(X, d)$ , $M \subset X$ , 如果$x \in M$, $\exists r > 0$, 若$B(x, r) \subset M$, 则$x$为$M$的内点；（一般的度量空间需要满足一些性质，比一般的向量空间更加宽泛，严格定义参看泛函中的定义）
 > - 内部：$M$中所有的内点集合为内部，$int(M)$
 > - 开集：如果$M = int(M)$ , $M$是开集
 > - 如果 $X / M$ 差集为开集，则$M$是闭集
@@ -47,7 +54,9 @@ author:     BY Zhi-kai Yang
 
 可以用凸组合来定义凸包：
 
-$conv(C)$中任意向量均可表示为$C$中有限个向量的凸组合，既对任意$\forall x \in C$有：$\boldsymbol{x}=\sum_{i=1}^{m} w_{i} \boldsymbol{x}_{i}$ ,$\boldsymbol{x}_{i} \in C, w_{i} \geq 0, i=1, \ldots, m$, $\sum_{i=1}^{m} w_{i}=1$
+$conv(C)$中任意向量均可表示为$C$中有限个向量的凸组合，既对任意$\forall x \in C$有：
+
+$\boldsymbol{x}=\sum_{i=1}^{m} w_{i} \boldsymbol{x}_{i}$ ,$\boldsymbol{x}_{i} \in C, w_{i} \geq 0, i=1, \ldots, m$, $\sum_{i=1}^{m} w_{i}=1$
 
 **properties** of Convec Hull:
 
@@ -70,7 +79,10 @@ $aff(C)$中任意向量均可以表示为$C$ 中有限个向量的仿射组合�
 **example:** 仿射集
 
 - 实数空间$\mathbb{R^n}$中的点线、超平面
-- 矩阵的零空间 $\operatorname{null}(A)=\left\{\boldsymbol{x} \in \mathbb{R}^{n} | A \boldsymbol{x}=0\right\}$
+
+- 矩阵的零空间 
+
+  $\operatorname{null}(A)=\left\{\boldsymbol{x} \in \mathbb{R}^{n} | A \boldsymbol{x}=0\right\}$
 
 **properties** of affine hull
 
@@ -89,11 +101,13 @@ $$
 > $$
 > x = \sum_i^m {\alpha_i x^i},\ x^i \in C,\ \alpha_i \in (0,1],\ \sum{\alpha_i} = 1
 > $$
-> ​		$aff(x)$ 为 
+> $aff(x)$ 为 
 > $$
-> \sum{}\beta_i\sum{\alpha_i x^i} , \sum{\beta_i} =1, 
+> \sum{}\beta_i\sum{\alpha_i x^i} , \sum{\beta_i} =1,
 > $$
-> ​	即是$C$中向量正组合，$aff(x) \subseteq aff(C)$ 反过来一样, $aff(C) = aff(conv(C))$可以证明；
+> ​	
+>
+> 即是$C$中向量正组合，$aff(x) \subseteq aff(C)$ 反过来一样, $aff(C) = aff(conv(C))$可以证明；
 >
 > （2）证明 $aff(C) = aff(cl(C))$
 >
@@ -103,7 +117,9 @@ $$
 > $$
 > aff(x) = \sum{\beta_i x^i},\ x^i \in cl(C)
 > $$
-> ​		则一定能找到$\exists y^i \in C$, 使得$x^i = \epsilon + y^i$, $aff(x)$ 仍可以表示为$C$中向量的正组合, 两个仿射包相同；
+> ​		
+>
+> 则一定能找到$\exists y^i \in C$, 使得$x^i = \epsilon + y^i$, $aff(x)$ 仍可以表示为$C$中向量的正组合, 两个仿射包相同；
 
 ## Cone 
 
@@ -170,7 +186,9 @@ $$
 
 **example**
 
-$\mathbb{R^3}$中的集合$C=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{1}^{2}+x_{2}^{2} \leq 1, x_{3}=1\right\}$
+$\mathbb{R^3}$中的集合 
+
+$C=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{1}^{2}+x_{2}^{2} \leq 1, x_{3}=1\right\}$
 
 仿射包与相对内部分别为：
 
