@@ -16,7 +16,10 @@ author:     BY Zhi-kai Yang
 **example:** 
 
 - 超平面 
-- 球 $$B(\boldsymbol{z}, \delta)=\left\{x \in \mathbb{R}^{n} |\|\boldsymbol{x}-\boldsymbol{z}\|<\delta\right\}$$
+- 球 
+$$
+B(\boldsymbol{z}, \delta)=\left\{x \in \mathbb{R}^{n} |\|\boldsymbol{x}-\boldsymbol{z}\|<\delta\right\}
+$$
 
 - 正定矩阵、半正定矩阵、对称矩阵
 
@@ -76,7 +79,9 @@ $aff(C)$中任意向量均可以表示为$C$ 中有限个向量的仿射组合�
 
 - 实数空间$\mathbb{R^n}$中的点线、超平面
 
-- 矩阵的零空间 $$\operatorname{null}(A)=\left\{\boldsymbol{x} \in \mathbb{R}^{n} | A \boldsymbol{x}=0\right\}$$
+- 矩阵的零空间 
+
+$$\operatorname{null}(A)=\left\{\boldsymbol{x} \in \mathbb{R}^{n} | A \boldsymbol{x}=0\right\}$$
 
 **properties** of affine hull
 
