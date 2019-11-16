@@ -17,6 +17,7 @@ author:     BY Zhi-kai Yang
 
 - 超平面 
 - 球 $$B(\boldsymbol{z}, \delta)=\left\{x \in \mathbb{R}^{n} |\|\boldsymbol{x}-\boldsymbol{z}\|<\delta\right\}$$
+
 - 正定矩阵、半正定矩阵、对称矩阵
 
 **保持凸性的运算：**($C1$和$C2$均为凸集)
@@ -51,7 +52,7 @@ author:     BY Zhi-kai Yang
 
 $conv(C)$中任意向量均可表示为$C$中有限个向量的凸组合，既对任意$\forall x \in C$有：
 
-$\boldsymbol{x}=\sum_{i=1}^{m} w_{i} \boldsymbol{x}_{i}$ ,$\boldsymbol{x}_{i} \in C, w_{i} \geq 0, i=1, \ldots, m$, $\sum_{i=1}^{m} w_{i}=1$
+$$\boldsymbol{x}=\sum_{i=1}^{m} w_{i} \boldsymbol{x}_{i}$ ,$\boldsymbol{x}_{i} \in C, w_{i} \geq 0, i=1, \ldots, m$, $\sum_{i=1}^{m} w_{i}=1$$
 
 **properties** of Convec Hull:
 
@@ -75,13 +76,12 @@ $aff(C)$中任意向量均可以表示为$C$ 中有限个向量的仿射组合�
 
 - 实数空间$\mathbb{R^n}$中的点线、超平面
 
-- 矩阵的零空间 
-
-  $\operatorname{null}(A)=\left\{\boldsymbol{x} \in \mathbb{R}^{n} | A \boldsymbol{x}=0\right\}$
+- 矩阵的零空间 $$\operatorname{null}(A)=\left\{\boldsymbol{x} \in \mathbb{R}^{n} | A \boldsymbol{x}=0\right\}$$
 
 **properties** of affine hull
 
 对任何集合$C$. 必然存在 
+
 $$
 \operatorname{aff}(C)=\operatorname{aff}(\operatorname{conv}(C))=\operatorname{aff}(\operatorname{cl}(C))
 $$
@@ -183,11 +183,11 @@ $$
 
 $\mathbb{R^3}$中的集合 
 
-$C=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{1}^{2}+x_{2}^{2} \leq 1, x_{3}=1\right\}$
+$$C=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{1}^{2}+x_{2}^{2} \leq 1, x_{3}=1\right\}$$
 
 仿射包与相对内部分别为：
 
-$\operatorname{aff}(C)=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{3}=1\right\}, \operatorname{ri}(C)=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{1}^{2}+x_{2}^{2}<1, x_{3}=1\right\}$
+$$\operatorname{aff}(C)=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{3}=1\right\}, \operatorname{ri}(C)=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{1}^{2}+x_{2}^{2}<1, x_{3}=1\right\}$$
 
 <img src="https://pic.superbed.cn/item/5dceb2d88e0e2e3ee94c48ab.jpg" style="zoom:50%;" />
 
@@ -222,3 +222,4 @@ $\operatorname{aff}(C)=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{3}=1\right\
 - [泛函的内部定义](https://zhuanlan.zhihu.com/p/86233206)
 - [Carathéodory's theorem (convex hull)]([https://en.wikipedia.org/wiki/Carath%C3%A9odory%27s_theorem_(convex_hull)](https://en.wikipedia.org/wiki/Carathéodory's_theorem_(convex_hull)))
 
+> 课上老师的证明还有很多，部分没跟上，下次课尽量全部记录下来； 下一讲是凸函数。
