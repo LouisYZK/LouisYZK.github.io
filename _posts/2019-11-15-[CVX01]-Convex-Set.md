@@ -16,8 +16,7 @@ author:     BY Zhi-kai Yang
 **example:** 
 
 - 超平面 
-- 球 $B(\boldsymbol{z}, \delta)=\left\{x \in \mathbb{R}^{n} |\|\boldsymbol{x}-\boldsymbol{z}\|<\delta\right\}$
-
+- 球 $$B(\boldsymbol{z}, \delta)=\left\{x \in \mathbb{R}^{n} |\|\boldsymbol{x}-\boldsymbol{z}\|<\delta\right\}$$
 - 正定矩阵、半正定矩阵、对称矩阵
 
 **保持凸性的运算：**($C1$和$C2$均为凸集)
@@ -26,15 +25,11 @@ author:     BY Zhi-kai Yang
 - 任意scalar $\lambda$,  $\lambda C$是凸集
 - 闭包$cl(C)$ 和内部$int(C)$ 都是凸集
 - 放射变换下的像和原像
-  - $\text { suppose } f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} \text { is affine }\left(f(x)=A x+b \text { with } A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m}\right)$
+  - $$\text { suppose } f: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m} \text { is affine }\left(f(x)=A x+b \text { with } A \in \mathbf{R}^{m \times n}, b \in \mathbf{R}^{m}\right)$$
   
+  - $$S \subseteq \mathbf{R}^{n} \text { convex } \Longrightarrow f(S)=\{f(x) | x \in S\} \text { convex }$$
   
-  
-  - $S \subseteq \mathbf{R}^{n} \text { convex } \Longrightarrow f(S)=\{f(x) | x \in S\} \text { convex }$
-  
-  
-  
-  - $C \subseteq \mathbf{R}^{m} \text { convex } \quad \Longrightarrow \quad f^{-1}(C)=\left\{x \in \mathbf{R}^{n} | f(x) \in C\right\} \text { convex }$
+  - $$C \subseteq \mathbf{R}^{m} \text { convex } \quad \Longrightarrow \quad f^{-1}(C)=\left\{x \in \mathbf{R}^{n} | f(x) \in C\right\} \text { convex }$$
 
 **泛函概念补充(此课程默认prerequisite是泛函分析？)**
 
