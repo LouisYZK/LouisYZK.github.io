@@ -228,3 +228,8 @@ $$\operatorname{aff}(C)=\left\{\boldsymbol{x} \in \mathbb{R}^{3} | x_{3}=1\right
 - [Carathéodory's theorem (convex hull)]([https://en.wikipedia.org/wiki/Carath%C3%A9odory%27s_theorem_(convex_hull)](https://en.wikipedia.org/wiki/Carathéodory's_theorem_(convex_hull)))
 
 > 课上老师的证明还有很多，部分没跟上，下次课尽量全部记录下来； 下一讲是凸函数。
+
+## Appendix 
+题目中发现的一些有用结论：
+
+1、凸集也等价于他跟任意直线的交集${\hat{x} + tv| \hat{x} \in C}$是凸集.
