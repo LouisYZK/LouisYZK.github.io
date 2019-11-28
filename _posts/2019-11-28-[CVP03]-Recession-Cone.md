@@ -112,7 +112,7 @@ r_f(d)= \sup_{\alpha \gt 0} \frac{f(x + \alpha d) - f(x)}{\alpha} = \lim_{\alpha
 $$
 于是回收函数可以描述如下的函数变化性质：
 
-<img src="https://pic1.superbed.cn/item/5ddfdf228e0e2e3ee9f3514e.jpg" style="zoom:67%;" />
+<img src="https://pic1.superbed.cn/item/5ddfdf228e0e2e3ee9f3514e.jpg" style="zoom:27%;" />
 
 
 
