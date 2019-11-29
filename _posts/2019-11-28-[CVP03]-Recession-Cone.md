@@ -131,11 +131,11 @@ $$
 
 > Proof:
 >
-> 如果$x^*$是局部最小值点，假设他不是全局最小值，则必然存在$x$使得 $f(x) \lt f(x^*)$
+> 如果$x^{*} $ 是局部最小值点，假设他不是全局最小值，则必然存在$x$使得 $f(x) \lt f(x^{*})$
 >
 > 根据凸函数定义有：
 > $$
-> f(\theta x^* + (1-\theta) x) \le \theta f(x^*) + (1-\theta) f(x) \le  f(x^*)
+> f(\theta x^{*}+ (1-\theta) x) \le \theta f(x^{*}) + (1-\theta) f(x) \le  f(x^{*})
 > $$
 > 也就是说 $x^*$与 $x$连线上的点都比$x^*$更优， 这与$x^*$是局部最优的假设矛盾，所以他不是全局最优的假设不成立。
 
@@ -145,10 +145,13 @@ $$
 $$
 X^* = \bigcap_{k=0}^{\infty} V_{\gamma_k}
 $$
+
 其中标量序列 ${\gamma_k} \rightarrow \inf_{x\in X}f(x)$,  这里的${V_k}$为嵌套集合序列 （就是元素为集合的序列，且满足嵌套的性质：）
+
 $$
 V_k \subseteq V_{k-1} ......\subseteq V_0
 $$
+
 则有
 
 $X^*$非空  $\Longrightarrow$  $f$ 存在最优解
