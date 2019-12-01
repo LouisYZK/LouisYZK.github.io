@@ -113,7 +113,7 @@ plt.show()
 ```
 
 
-![png](../img/post/MCMC/output_1_0.png)
+![png](../../../../img/post/MCMC/output_1_0.png)
 
 
 ### Gibbs Sampling
@@ -171,7 +171,7 @@ plt.show()
 
 
 
-![png](../img/post/MCMC/output_3_1.png)
+![png](../../../../img/post/MCMC/output_3_1.png)
 
 
 
@@ -208,6 +208,6 @@ importance_sampling()
 ```
 
 
-![png](../img/post/MCMC/output_4_0.png)
+![png](../../../../img/post/MCMC/output_4_0.png)
 
 
