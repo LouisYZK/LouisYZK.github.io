@@ -142,36 +142,36 @@ $$
 (C^*)^* = cl(conv(C))
 $$
 
-特别的，如果$C$是闭凸集，有$(C^*)^* = C$
+特别的，如果$C$是闭凸集，有$(C^\star)^\star = C$
 
 >Proof
 >
->(1) 证明 $C^{*}= (cl(C))^{*}$， 证明两集合相等需要证明互为彼此子集；
+>(1) 证明 $C^{\star}= (cl(C))^{\star}$， 证明两集合相等需要证明互为彼此子集；
 >
 >a. $\forall X, Y$ 若 
 $X \subseteq Y$ , 则有
-$Y^{*} \subseteq X^{*}$ ;
+$Y^{\star} \subseteq X^{\star}$ ;
 因为$C \subseteq cl(C)$ 
-则有 $(cl(C))^{*} \subseteq C^{*}$
+则有 $(cl(C))^{\star} \subseteq C^{\star}$
 >
->b. 若$y \in C^{*}$, 
+>b. 若$y \in C^{\star}$, 
 对于 序列$\{x_k\} \subset C$ 
 都有 $y^Tx^k\le0$  ; 
  因为序列的极限就是集合的闭包，则对于$x \in cl(C)$ 
- 也有$y^Tx\le 0$, 所以 $y \in cl(C)^{*}$ ;
-  则$C^{*} \subseteq cl(C)^{*}$
+ 也有$y^Tx\le 0$, 所以 $y \in cl(C)^{\star}$ ;
+  则$C^{\star} \subseteq cl(C)^{\star}$
 >
 >所以两者互为子集，两个集合相等；
 >
->(2) 证明 $C^{*} = (conv(C))^{*}$
+>(2) 证明 $C^{\star} = (conv(C))^{\star}$
 >
->a. 同样的根据$C \subseteq conv(C)$ 得出 $(conv(C))^{*} \subseteq C^{*}$
+>a. 同样的根据$C \subseteq conv(C)$ 得出 $(conv(C))^{\star} \subseteq C^{\star}$
 >
->b. 若$y \in C^{*}$ , 对于任意$x \in C$ 则有 $y^Tx \le 0$ ,  那么对于所有$x$的凸组合的$z$ ,也一定有$y^Tz \le 0$
+>b. 若$y \in C^{\star}$ , 对于任意$x \in C$ 则有 $y^Tx \le 0$ ,  那么对于所有$x$的凸组合的$z$ ,也一定有$y^Tz \le 0$
 >
->因此有$y \in conv(C)^{*}$ ; 即 $C^{*} \subseteq (conv(C))^{*}$
+>因此有$y \in conv(C)^{\star}$ ; 即 $C^{\star} \subseteq (conv(C))^{\star}$
 >
-> (3) 证明 $C^{*} = (cone(C))^{*}$ 差不多的证明思路；
+> (3) 证明 $C^{\star} = (cone(C))^{\star}$ 差不多的证明思路；
 
 ## 多面体集和多面体函数
 
