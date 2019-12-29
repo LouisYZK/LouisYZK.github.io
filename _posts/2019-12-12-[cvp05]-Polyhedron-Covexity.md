@@ -33,8 +33,8 @@ $C$ 属于超平面$H$的一个半空间中，若$x$ 是集合$C \cap H$ 的顶�
 
 > proof
 >
-> 若$\bar{x} \in C\cap H$ 且是他的顶点, 反证法，假设$\bar{x}$不是$C$的顶点，则存在$y,z \in C$使得 $\bar{x} = \alpha y + (1-\alpha)z$
->
+> 若$\bar{x} \in C\cap H$ 且是他的顶点, 反证法，假设$\bar{x}$不是$C$的顶点，则存在$y,z \in C$使得 
+> $\bar{x} = \alpha y + (1-\alpha)z$
 > 因为$\bar{x} \in H$ 则超平面的等价表示为: $H: \{x |a^Tx=a^T\bar{x}\}$
 >
 > 因为$C$ 在超平面的闭半空间中，则$y,z$满足：
@@ -49,14 +49,16 @@ $C$ 属于超平面$H$的一个半空间中，若$x$ 是集合$C \cap H$ 的顶�
 
 非空闭凸集存在至少一个顶点  $\iff$  他不包含任何直线，即具有
 
-$${x+\alpha d |\alpha \in R, d \neq 0 }$$ 形式的集合； 
+$${x+\alpha d |\alpha \in R, d \neq 0 }$$ 
+
+形式的集合； 
 
 > proof
 >
 > 充分性：
 >
-> 若$x$是$C$ 的极点，采用反证法，若$C$包含直线，则存在这样的集合${\bar{x} +\alpha d|\alpha \in R, d \ge 0 }$
->
+> 若$x$是$C$ 的极点，采用反证法，若$C$包含直线，则存在这样的集合
+> ${\bar{x} +\alpha d|\alpha \in R, d \ge 0 }$
 > 则 $d$ 和$-d$ 都是过$\bar{x}$ 点的**回收方向**，  由回收锥定理，一个集合中的一点处的回收方向也是集合中其余任一点的回收方向，即在$x$ 也存在 $x + \alpha d \in C, x - \alpha d \in C$ 这与$x$ 是极点矛盾，顾假设不成立，$C$不能包含直线；
 >
 > 必要性：
@@ -104,7 +106,17 @@ $$
 
 ### 命题5
 
-多面体集 $$\{x | a^T_jx \le b_j, j=1,2,3...,r  \}$$ 存在顶点  $\iff$  集合$$\{a_j |j=1,2,3...r \}$$ 包含$n$ 个线性无关向量；
+多面体集 
+
+$$\{x | a^T_jx \le b_j, j=1,2,3...,r  \}$$ 
+
+存在顶点  $\iff$  
+
+集合
+
+$$\{a_j |j=1,2,3...r \}$$ 
+
+包含$n$ 个线性无关向量；
 
 ## 极锥 (Polar Cone)
 
@@ -134,32 +146,32 @@ $$
 
 >Proof
 >
->(1) 证明 $C^* = (cl(C))^*$， 证明两集合相等需要证明互为彼此子集；
+>(1) 证明 $C^{*}= (cl(C))^{*}$， 证明两集合相等需要证明互为彼此子集；
 >
 >a. $\forall X, Y$ 若 
 $X \subseteq Y$ , 则有
-$Y^* \subseteq X^*$ ;
+$Y^{*} \subseteq X^{*}$ ;
 因为$C \subseteq cl(C)$ 
-则有 $(cl(C))^* \subseteq C^*$
+则有 $(cl(C))^{*} \subseteq C^{*}$
 >
->b. 若$y \in C^*$, 
+>b. 若$y \in C^{*}$, 
 对于 序列$\{x_k\} \subset C$ 
 都有 $y^Tx^k\le0$  ; 
  因为序列的极限就是集合的闭包，则对于$x \in cl(C)$ 
- 也有$y^Tx\le 0$, 所以 $y \in cl(C)^*$ ;
-  则$C^* \subseteq cl(C)^*$
+ 也有$y^Tx\le 0$, 所以 $y \in cl(C)^{*}$ ;
+  则$C^{*} \subseteq cl(C)^{*}$
 >
 >所以两者互为子集，两个集合相等；
 >
->(2) 证明 $C^* = (conv(C))^*$
+>(2) 证明 $C^{*} = (conv(C))^{*}$
 >
->a. 同样的根据$C \subseteq conv(C)$ 得出 $(conv(C))^* \subseteq C^*$
+>a. 同样的根据$C \subseteq conv(C)$ 得出 $(conv(C))^{*} \subseteq C^{*}$
 >
->b. 若$y \in C^*$ , 对于任意$x \in C$ 则有 $y^Tx \le 0$ ,  那么对于所有$x$的凸组合的$z$ ,也一定有$y^Tz \le 0$
+>b. 若$y \in C^{*}$ , 对于任意$x \in C$ 则有 $y^Tx \le 0$ ,  那么对于所有$x$的凸组合的$z$ ,也一定有$y^Tz \le 0$
 >
->因此有$y \in conv(C)^*$ ; 即 $C^* \subseteq (conv(C))^*$
+>因此有$y \in conv(C)^{*}$ ; 即 $C^{*} \subseteq (conv(C))^{*}$
 >
->(3) 证明 $C^* = (cone(C))^*$ 差不多的证明思路；
+> (3) 证明 $C^{*} = (cone(C))^{*}$ 差不多的证明思路；
 
 ## 多面体集和多面体函数
 
